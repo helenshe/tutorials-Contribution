@@ -1,43 +1,41 @@
 [VALIDATE_1]
-###Rule
-exact-match
 
-###Question
-2+1
+###Rule
+regex
 
 ###Match
-3
+^https:\/\/account.hanatrial.ondemand.com\/cockpit\/.*\/\w\d+trial\/
+
 [VALIDATE_1]
 
 [VALIDATE_2]
-###Rule
-exact-match
 
-###Question
-2+2
+###Rule
+regex
 
 ###Match
-4
+ [0-9]*\.?[0-9]+,[0-9]*\.?[0-9]+,[0-9]*\.?[0-9]+,[0-9]*\.?[0-9]+,[0-9]*\.?[0-9]+,[0-9]*\.?[0-9]+,[0-9]*\.?[0-9]+,[0-9]*\.?[0-9]+,[0-9]*\.?[0-9]+,[0-9]*\.?[0-9]+,[0-9]*\.?[0-9]+
+
 [VALIDATE_2]
 
-[VALIDATE_3]
+[VALIDATE_5]
+
 ###Rule
 exact-match
 
-###Question
-2+6
-
 ###Match
-8
-[VALIDATE_3]
+my answer to this question is yes
 
-[VALIDATE_4]
+[VALIDATE_5]
+
+
+
+[VALIDATE_6]
+
 ###Rule
-exact-match
-
-###Question
-2+6
+regex-begins-with
 
 ###Match
-8
-[VALIDATE_4]
+https://account.hanatrial.ondemand.com/cockpit/#/acc/[id]trial
+
+[VALIDATE_6]
